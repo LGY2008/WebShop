@@ -4,7 +4,6 @@ from Page.page_exit import PageExit
 import unittest
 class TestLogin(unittest.TestCase):
     def setUp(self):
-        # 切记 实例化一次
         page=PageExit()
         self.page_login=page.page_get_login_object()
         self.page_logout=page.page_get_logout_object()
